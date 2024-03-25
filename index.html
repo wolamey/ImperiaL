@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class="main_container">
+
+
     <header>
         <img class="logo_img" src="./images/logo.webp" alt="">
         <div class="nav_links">
@@ -27,7 +30,7 @@
             <img src="./images/phoneImg.webp" alt="">
             <b>8 (963) 944 99 91</b>
         </div>
-        <a class="button_call_me" href="./success.html">Заказать звонок</a>
+        <a class="button_call_me" href="#contacts">Заказать звонок</a>
     </header>
 
     <div class="main_offer_background">
@@ -45,7 +48,7 @@
                     <div class="ellipse ellipse1"></div>
                 </div>
                 <div class="button_shadow"></div>
-                <a href="./success.html" class="choose_mattress_button">Подобрать матрас
+                <a href="#contacts" class="choose_mattress_button">Подобрать матрас
                 </a>
             </div>
             <div class="show_more">
@@ -112,7 +115,7 @@
 
     </div>
 
-    <div  id="matrases" class="our_products">
+    <div id="matrases" class="our_products">
         <div class="blue_line_container">
             <div class="blue_line"></div>
             <div class="products_container">
@@ -329,7 +332,7 @@
 
 
                 </div>
-                <a href="./success.html" class="button_show_all_vars">Показать все варианты</a>
+                <a href="#contacts" class="button_show_all_vars">Показать все варианты</a>
             </div>
 
 
@@ -361,7 +364,8 @@
                     </div>
                 </div>
 
-                <a href="./success.html" class="choose_mattress_button choose_mattress_button_padding">Подобрать матрас</a>
+                <a href="#contacts" class="choose_mattress_button choose_mattress_button_padding">Подобрать
+                    матрас</a>
 
 
             </div>
@@ -485,20 +489,20 @@
                         интересующие вопросы </p>
 
 
-                    <form action="submit">
+                    <form action="success.html">
                         <p class="form_title">
                             Обратная связь
                         </p>
-                        <input class="user_name" type="text" placeholder="Введите ваше имя">
-                        <input class="user_tel" type="tel" placeholder="Ваш номер телефона">
+                        <input class="user_name" name="name" type="text" placeholder="Введите ваше имя" required>
+                        <input pattern='^\+?\d{0,13}' name="phone" class="user_tel" type="tel" placeholder="Ваш номер телефона" required>
 
                         <p class="form_hint">
                             *Наш менеджер свяжется с вами в течение 3 минут и ответит на все ваши вопросы
                         </p>
 
-                        <input  class="button_submit_form" type="submit" value="Отправить заявку">
-
+                        <input class="button_submit_form" type="submit" value="Отправить заявку">
                     </form>
+
 
 
 
@@ -539,17 +543,19 @@
             </div>
             <div class="call_me">
                 <div class="phone_number">
-                <img src="./images/white_phone_logo.webp" alt="">
-                <b>8 (963) 944 99 91</b>
+                    <img src="./images/white_phone_logo.webp" alt="">
+                    <b>8 (963) 944 99 91</b>
 
                 </div>
-            <a href="" class="get_call">
-                Заказать звонок
-            </a>
+                <a href="" class="get_call">
+                    Заказать звонок
+                </a>
             </div>
         </div>
         <p class="rights">Все права защищены. 2020. Империа-Л.</p>
     </footer>
+
+</div>
 
 </body>
 

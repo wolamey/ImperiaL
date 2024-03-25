@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+@font-face { 
+  font-family: "MuseoSansCyrl300";
+  src: url("./fonts/MuseoSansCyrl300.eot");
+  src: url("./fonts/MuseoSansCyrl300.eot?#iefix")format("embedded-opentype"),
+  url("./fonts/MuseoSansCyrl300.woff") format("woff");
+    font-style: normal;
+  font-weight: 300;
+  
+}
+@font-face { 
+  font-family: "MuseoSansCyrl500";
+  src:   url("./fonts/MuseoSansCyrl500.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face { 
+  font-family: "MuseoSansCyrl700";
+src:  url("./fonts/MuseoSansCyrl700.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
 html {
   scroll-behavior: smooth;
   }
@@ -109,6 +131,7 @@ input {
 }
 
 .choose_mattress_button {
+  font-family: 'MuseoSansCyrl700';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +140,7 @@ input {
   border-radius: 31px;
   background: linear-gradient(0deg, #29ABE2 0%, #59C6F4 100%);
   font-size: 16px;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 19.2px;
   text-align: center;
   color: white;
@@ -128,7 +151,7 @@ a,
 button,
 p,
 b {
-  font-family: "Museo Sans Cyrl", sans-serif;
+  font-family: "MuseoSansCyrl300" ;
   text-decoration: none;
 }
 
@@ -169,12 +192,15 @@ header .call_us {
 }
 
 header .call_us b {
+  font-family: "MuseoSansCyrl500";
   font-size: 16px;
   white-space: nowrap;
   margin: 0 0 0 10px;
 }
 
 header .button_call_me {
+  font-family: "MuseoSansCyrl500";
+
   padding: 17px 35px;
   border-radius: 27px;
   border: 2px solid #29ABE2;
@@ -184,7 +210,6 @@ header .button_call_me {
   align-items: center;
   text-wrap: nowrap;
   font-size: 15px;
-  font-weight: 500;
   line-height: 18px;
   color: #29ABE2;
 }
@@ -281,6 +306,7 @@ header .button_call_me {
 }
 
 .main_offer .show_more {
+  font-family: 'MuseoSansCyrl500';
   display: flex;
   align-items: start;
   margin: 113px 0 0 0;
@@ -335,8 +361,8 @@ header .button_call_me {
 
 .advantages .white_line_container .advantages_container .advantages_list .advantage .adv_title {
   font-size: 18px;
-  font-weight: 700;
   line-height: 27px;
+  font-family: 'MuseoSansCyrl700';
 }
 
 .advantages .white_line_container .advantages_container .advantages_list .advantage .adv_description {
@@ -392,10 +418,11 @@ header .button_call_me {
 
 .our_products .blue_line_container .products_container .product_list .product_item .prod_info .prod_description .prod_title {
   font-size: 20px;
-  font-weight: 700;
   line-height: 24px;
   text-align: left;
   color: #353535;
+  font-family: 'MuseoSansCyrl700';
+
 }
 
 .our_products .blue_line_container .products_container .product_list .product_item .prod_info .prod_description .prod_structure .structure_title {
@@ -421,8 +448,8 @@ header .button_call_me {
 }
 
 .our_products .blue_line_container .products_container .product_list .product_item .prod_info .prod_price .price {
+  font-family: 'MuseoSansCyrl700';
   font-size: 18px;
-  font-weight: 700;
   line-height: 21.6px;
   text-align: left;
 }
@@ -520,15 +547,16 @@ header .button_call_me {
 
 .prod_feedback .feedback_container .feedback_list .feedback .person_name {
   font-size: 16px;
-  font-weight: 700;
+  font-family: 'MuseoSansCyrl700';
   line-height: 21.6px;
   color: #363636;
   margin: 18px 0 1px 0;
 }
 
 .prod_feedback .feedback_container .feedback_list .feedback .purchased_prod {
+  font-family: 'MuseoSansCyrl500';
+
   font-size: 14px;
-  font-weight: 600;
   line-height: 18.9px;
   color: #29ABE2;
 }
@@ -670,8 +698,9 @@ footer .footer_container .links_foot a {
 }
 
 footer .footer_container .address_list .address_title {
+  font-family: 'MuseoSansCyrl500';
+
   font-size: 14px;
-  font-weight: 500;
   line-height: 16.8px;
   text-align: left;
   color: #79A0B0;
@@ -680,11 +709,12 @@ footer .footer_container .address_list .address_title {
 
 footer .footer_container .address_list .address_point {
   font-size: 12px;
-  font-weight: 500;
   line-height: 14.4px;
   text-align: left;
   color: #FFFFFF;
   margin: 0 0 8px 0;
+  font-family: 'MuseoSansCyrl500';
+
 }
 
 footer .footer_container .call_me {
